@@ -9,4 +9,4 @@ const worker = new Worker("email-queue", async (job) => {
   console.log(`Sending email to ${job.data.email}`);
   await sendEmail();
   console.log("Email Sent");
-}).run();
+});
